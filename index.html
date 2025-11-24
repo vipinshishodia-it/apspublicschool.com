@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APS Public School</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            background-size: cover;
+            animation: bgMove 12s infinite alternate;
+        }
+
+        @keyframes bgMove {
+            from {background-position: left;}
+            to {background-position: right;}
+        }
+
+        /* Logo */
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo img {
+            width: 160px;
+            filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.3));
+        }
+
+        /* Navigation Bar */
+        .menu {
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .menu a {
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff0000;
+            transform: scale(1.1);
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            color: #003566;
+            margin-top: 15px;
+            font-size: 38px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        p {
+            text-align: center;
+            padding: 0 30px;
+            font-size: 18px;
+            color: #222;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff3131;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0px 4px 10px rgba(255,0,0,0.4);
+        }
+
+        .btn:hover {
+            background: #d10000;
+            transform: scale(1.1);
+        }
+
+        /* Pics */
+        .pics {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+            flex-wrap: wrap;
+        }
+
+        .pics img {
+            width: 28%;
+            min-width: 260px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+            transition: 0.4s;
+        }
+
+        .pics img:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+        }
+
+        /* Video */
+        video {
+            width: 70%;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #003566; 
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        footer h2 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        footer p {
+            font-size: 15px;
+            color: #ffd60a; /* Yellow text */
+            opacity: 1;
+        }
+
+        .footer-links a {
+            color: #ffd60a;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Floating Social Icons */
+        .floating-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .floating-icons a img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            padding: 6px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .floating-icons a img:hover {
+            transform: scale(1.2);
+            background: #ffd60a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="Apslogo.png">
+    </div>
+
+    <!-- Navigation -->
+    <div class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="Message.html">Message</a>
+        <a href="KidsCorner.html">Kid's Corner</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="Career.html">Career</a>
+    </div>
+
+    <!-- Main Title -->
+    <h1>APS Public School Dhaulana</h1>
+
+    <p>
+        At APS, every child is a star! We believe in nurturing the unique talent 
+        in academics, sports, arts, creativity, communication and leadership.  
+        We provide a joyful learning environment that encourages students to grow, explore and achieve excellence.
+    </p>
+
+    <div style="text-align:center;">
+        <a class="btn" href="#">Read More</a>
+    </div>
+
+    <hr style="width:80%; margin:40px auto;">
+
+    <h1>Our School Pics & Videos</h1>
+
+    <div class="pics">
+        <img src="Rahul.png">
+        <img src="ApsPics.png">
+        <img src="APSPIC.png">
+    </div>
+
+    <video src="video/apsvideo.mp4" controls></video>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>APS Public School</h2>
+        <p>Dhaulana, Hapur, Uttar Pradesh</p>
+        <p>Contact: +91 9627355425 | Email: apsschool@gmail.com</p>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Contact Us</a>
+        </div>
+
+        <p style="margin-top:20px; color:#ffd60a;">
+            © 2025 APS Public School. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- Floating Social Media Icons -->
+    <div class="floating-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"></a>
+    </div>
+
+</body>
+</html>
